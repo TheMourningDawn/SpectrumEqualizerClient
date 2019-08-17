@@ -7,8 +7,9 @@ class SpectrumEqualizerClient {
 public:
     SpectrumEqualizerClient();
     UDP multicastUDP;
-    int port;
     IPAddress remoteIP;
+    int port;
+    int retry;
 
     int frequenciesLeftChannel[7];
     int frequenciesRightChannel[7];
